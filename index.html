@@ -141,12 +141,11 @@ body{
   }
   @keyframes glow{ from{opacity:.6;} to{opacity:1;} }
   .hero-img-wrap{
-  position:relative;   /* أهم سطر هنا */
+  position:relative;
   width:100%;
-  
-  height:auto;
-  aspect-ratio:3/4;
-  margin-bottom:-10px;
+  max-width:280px;
+  margin:0 auto;
+  aspect-ratio:1/1;
   z-index:2;
   animation:floatCup 4.5s ease-in-out infinite;
   }
@@ -156,34 +155,32 @@ body{
   }
   .hero-img-wrap svg{width:100%; height:100%;}
   .hero-img-wrap img{
+    display:block;
     width:100%; height:100%;
     object-fit:contain;
     filter:drop-shadow(0 20px 25px rgba(43,28,18,.25));
-    -webkit-mask-image:linear-gradient(to bottom, #000 72%, transparent 100%);
-  mask-image:linear-gradient(to bottom, #000 72%, transparent 100%);
+    -webkit-mask-image:linear-gradient(to bottom, #000 82%, transparent 100%);
+  mask-image:linear-gradient(to bottom, #000 82%, transparent 100%);
 
   }
   @media (max-width:520px){
+    .hero-img-wrap{ max-width:230px; }
   }
   .hero-title{
-  position:absolute;
-  bottom:80px;
-  left:0;
-  right:0;
+  position:relative;
   width:100%;
-  font-size:clamp(2.8rem, 8vw, 5.2rem);
+  margin:-18px 0 0;
+  font-size:clamp(2.4rem, 9vw, 3.6rem);
   font-weight:800;
   line-height:1.05;
   color:var(--coffee-dark);
   z-index:4;
   letter-spacing:1px;
   text-align:center;
-  margin:0;
   animation:fadeUp 1s ease forwards;
-  text-shadow:0 2px 12px rgba(247,240,228,.85);
 }
   .hero p.tag{
-    margin-top:18px;
+    margin-top:14px;
     color:var(--muted);
     font-size:1rem;
     letter-spacing:.5px;
@@ -192,11 +189,11 @@ body{
     opacity:0;
   }
   .btn-gold{
-    margin-top:34px;
+    margin-top:6px;
     display:inline-block;
     background:linear-gradient(135deg, var(--gold), var(--gold-deep));
     color:#fff;
-    padding:15px 42px;
+    padding:14px 40px;
     border-radius:0px;
     text-decoration:none;
     font-weight:600;
@@ -409,10 +406,9 @@ body{
 <section class="hero">
   <div class="hero-img-wrap">
     <!-- Replace this src with your own hero image -->
-    <img src="images/cleaned_coffee.jpg" alt="Iced Coffee">
-  <h1 class="hero-title">ORDER<br>COFFEE</h1>
+    <img src="images/hero.png" alt="Iced Coffee">
+
 </div>
-  <p class="tag">Freshly brewed, premium taste experience</p>
   <a href="#menu" class="btn-gold">Show Menu</a>
 </section>
 
@@ -499,27 +495,27 @@ body{
     <!-- Smoothies -->
     <div class="item-card show" data-cat="smoothies">
       <div class="item-photo"><img src="images/mango_smoothie.jpg" alt="Mango Smoothie"></div>
-      <div class="item-name">Mango Smoothie</div>
+      <div class="item-name">Mango </div>
       <div class="item-price">80 egp</div>
     </div>
     <div class="item-card show" data-cat="smoothies">
       <div class="item-photo"><img src="images/mixed_berry_smoothie.jpg" alt="Strawberry Smoothie"></div>
-      <div class="item-name">Strawberry Smoothie</div>
+      <div class="item-name">Strawberry</div>
       <div class="item-price">80 egp</div>
     </div>
     <div class="item-card show" data-cat="smoothies">
-      <div class="item-photo"><img src="images/banana_oat_smoothie.jpg" alt="banana_oat_smoothie"></div>
-      <div class="item-name">banana_oat_smoothie</div>
+      <div class="item-photo"><img src="images/banana_oat_smoothie.jpg" alt="banana oat smoothie"></div>
+      <div class="item-name">banana</div>
       <div class="item-price">80 egp</div>
     </div>
     <div class="item-card show" data-cat="smoothies">
-      <div class="item-photo"><img src="images/kiwi_pineapple_smoothie.jpg" alt="kiwi_pineapple_smoothie"></div>
-      <div class="item-name">kiwi_pineapple_smoothie</div>
+      <div class="item-photo"><img src="images/kiwi_pineapple_smoothie.jpg" alt="kiwi pineapple smoothie"></div>
+      <div class="item-name">kiwi pineapple</div>
       <div class="item-price">120 egp</div>
     </div>
    <div class="item-card show" data-cat="smoothies">
       <div class="item-photo"><img src="images/strawberry_smoothie.jpg" alt="Strawberry Smoothie"></div>
-      <div class="item-name">Strawberry Smoothie</div>
+      <div class="item-name">Strawberry</div>
       <div class="item-price">90 egp</div>
     </div>
 
