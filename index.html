@@ -127,7 +127,7 @@ body{
     min-height:100svh;
     display:flex; flex-direction:column; align-items:center; justify-content:center;
     text-align:center;
-    padding:90px 2% 40px;
+    padding:90px 0% 40px;
     position:relative;
     background:linear-gradient(180deg, #f0e2c8 0%, #f7f0e4 75%);
     overflow:hidden;
@@ -143,9 +143,9 @@ body{
   .hero-img-wrap{
   position:relative;
   width:100%;
-  max-width:280px;
-  margin:0 auto;
-  aspect-ratio:1/1;
+  max-width:100%;
+  margin:0;
+  aspect-ratio:4/5;
   z-index:2;
   animation:floatCup 4.5s ease-in-out infinite;
   }
@@ -163,9 +163,9 @@ body{
   mask-image:linear-gradient(to bottom, #000 82%, transparent 100%);
 
   }
-  @media (max-width:520px){
-    .hero-img-wrap{ max-width:230px; }
-  }
+ @media (max-width:520px){
+    .hero-img-wrap{ aspect-ratio:1/1.15; }
+}
   .hero-title{
   position:relative;
   width:100%;
@@ -415,8 +415,6 @@ body{
 <!-- ================= MENU ================= -->
 <section class="section" id="menu">
   <h2 class="section-title reveal">Our <span class="accent">Menu</span></h2>
-  <p class="section-sub reveal">Choose from our wide range of drinks and desserts, crafted with care</p>
-
   <div class="tabs reveal">
     <button class="tab-btn active" data-cat="all">All Menu</button>
     <button class="tab-btn" data-cat="iced">Coffee</button>
