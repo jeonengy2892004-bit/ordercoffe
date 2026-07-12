@@ -174,7 +174,11 @@ body{
         min-height:auto;
         padding:70px 0 10px;
     }
-   }
+
+    #menu{
+        padding-top:10px;
+    }
+}
   .hero-title{
   position:relative;
   width:100%;
@@ -439,16 +443,94 @@ body{
   <h2 class="section-title reveal">Our <span class="accent">Menu</span></h2>
   <div class="tabs reveal">
     <button class="tab-btn active" data-cat="all">All Menu</button>
-    <button class="tab-btn" data-cat="iced">Coffee</button>
-    <button class="tab-btn" data-cat="cold">Cold Drinks</button>
     <button class="tab-btn" data-cat="milkshakes">Milkshakes</button>
-    <button class="tab-btn" data-cat="smoothies">Smoothies</button>
+   
+    <button class="tab-btn" data-cat="cold">Cold Drinks</button>
+     <button class="tab-btn" data-cat="smoothies">Smoothies</button>
+    <button class="tab-btn" data-cat="iced">Coffee</button>
+   
     <button class="tab-btn" data-cat="desserts">Desserts</button>
   </div>
 
   <div class="menu-grid reveal">
 
-    <!-- Hot Drinks -->
+   
+
+    <!-- Cold Drinks -->
+    <div class="item-card show" data-cat="cold">
+      <div class="item-photo"><img src="images/lemonade.jpg" alt="lemonade"></div>
+      <div class="item-name">lemonade</div>
+      <div class="item-price">50 egp</div>
+    </div>
+    <div class="item-card show" data-cat="cold">
+      <div class="item-photo"><img src="images/iced_tea.jpg" alt="Iced Tea"></div>
+      <div class="item-name">Iced Tea</div>
+      <div class="item-price">$2.50</div>
+    </div>
+    <div class="item-card show" data-cat="cold">
+      <div class="item-photo"><img src="images/mojito.jpg" alt="mojito"></div>
+      <div class="item-name">mojito</div>
+      <div class="item-price">80 egp</div>
+    </div>
+
+    <!-- Smoothies -->
+    <div class="item-card show" data-cat="smoothies">
+      <div class="item-photo"><img src="images/mango_smoothie.jpg" alt="Mango Smoothie"></div>
+      <div class="item-name">Mango </div>
+      <div class="item-price">80 egp</div>
+    </div>
+    <div class="item-card show" data-cat="smoothies">
+      <div class="item-photo"><img src="images/mixed_berry_smoothie.jpg" alt="blue berry Smoothie"></div>
+      <div class="item-name">blue berry smoothie</div>
+      <div class="item-price">80 egp</div>
+    </div>
+    <div class="item-card show" data-cat="smoothies">
+      <div class="item-photo"><img src="images/banana_oat_smoothie.jpg" alt="banana oat smoothie"></div>
+      <div class="item-name">banana smoothie</div>
+      <div class="item-price">80 egp</div>
+    </div>
+    <div class="item-card show" data-cat="smoothies">
+      <div class="item-photo"><img src="images/kiwi_pineapple_smoothie.jpg" alt="kiwi pineapple smoothie"></div>
+      <div class="item-name">kiwi smoothie</div>
+      <div class="item-price">120 egp</div>
+    </div>
+   <div class="item-card show" data-cat="smoothies">
+      <div class="item-photo"><img src="images/strawberry_smoothie.jpg" alt="Strawberry Smoothie"></div>
+      <div class="item-name">Strawberry</div>
+      <div class="item-price">90 egp</div>
+    </div>
+
+
+    <!-- Milkshakes -->
+    <div class="item-card show" data-cat="milkshakes">
+      <div class="item-photo"><img src="images/chocolate_milkshake.jpg" alt="Chocolate Milkshake"></div>
+      <div class="item-name">Chocolate Milkshake</div>
+      <div class="item-price">80 egp</div>
+    </div>
+    <div class="item-card show" data-cat="milkshakes">
+      <div class="item-photo"><img src="images/vanilla_milkshake.jpg" alt="Vanilla Milkshake"></div>
+      <div class="item-name">Vanilla Milkshake</div>
+      <div class="item-price">80 egp</div>
+    </div>
+   <div class="item-card show" data-cat="milkshakes">
+      <div class="item-photo"><img src="images/caramel_milkshake.jpg" alt="Caramel Milkshake"></div>
+      <div class="item-name">Caramel Milkshake</div>
+      <div class="item-price">80 egp</div>
+    </div>
+   <div class="item-card show" data-cat="milkshakes">
+      <div class="item-photo"><img src="images/oreo_milkshake.jpg" alt="Oreo Milkshake"></div>
+      <div class="item-name">Oreo Milkshake</div>
+      <div class="item-price">100 egp</div>
+    </div>
+   <div class="item-card show" data-cat="milkshakes">
+      <div class="item-photo"><img src="images/strawberry_milkshake.jpg" alt="Strawberry Milkshake"></div>
+      <div class="item-name">Strawberry Milkshake</div>
+      <div class="item-price">90 egp</div>
+    </div>
+
+
+
+ <!-- Hot Drinks -->
     <div class="item-card show" data-cat="iced">
       <div class="item-photo"><img src="images/espresso.jpg" alt="Espresso"></div>
       <div class="item-name">Espresso</div>
@@ -495,77 +577,10 @@ body{
     </div>
     
 
-    <!-- Cold Drinks -->
-    <div class="item-card show" data-cat="cold">
-      <div class="item-photo"><img src="images/lemonade.jpg" alt="lemonade"></div>
-      <div class="item-name">lemonade</div>
-      <div class="item-price">50 egp</div>
-    </div>
-    <div class="item-card show" data-cat="cold">
-      <div class="item-photo"><img src="images/iced_tea.jpg" alt="Iced Tea"></div>
-      <div class="item-name">Iced Tea</div>
-      <div class="item-price">$2.50</div>
-    </div>
-    <div class="item-card show" data-cat="cold">
-      <div class="item-photo"><img src="images/mojito.jpg" alt="mojito"></div>
-      <div class="item-name">mojito</div>
-      <div class="item-price">80 egp</div>
-    </div>
-
-    <!-- Smoothies -->
-    <div class="item-card show" data-cat="smoothies">
-      <div class="item-photo"><img src="images/mango_smoothie.jpg" alt="Mango Smoothie"></div>
-      <div class="item-name">Mango </div>
-      <div class="item-price">80 egp</div>
-    </div>
-    <div class="item-card show" data-cat="smoothies">
-      <div class="item-photo"><img src="images/mixed_berry_smoothie.jpg" alt="Strawberry Smoothie"></div>
-      <div class="item-name">Strawberry</div>
-      <div class="item-price">80 egp</div>
-    </div>
-    <div class="item-card show" data-cat="smoothies">
-      <div class="item-photo"><img src="images/banana_oat_smoothie.jpg" alt="banana oat smoothie"></div>
-      <div class="item-name">banana</div>
-      <div class="item-price">80 egp</div>
-    </div>
-    <div class="item-card show" data-cat="smoothies">
-      <div class="item-photo"><img src="images/kiwi_pineapple_smoothie.jpg" alt="kiwi pineapple smoothie"></div>
-      <div class="item-name">kiwi pineapple</div>
-      <div class="item-price">120 egp</div>
-    </div>
-   <div class="item-card show" data-cat="smoothies">
-      <div class="item-photo"><img src="images/strawberry_smoothie.jpg" alt="Strawberry Smoothie"></div>
-      <div class="item-name">Strawberry</div>
-      <div class="item-price">90 egp</div>
-    </div>
 
 
-    <!-- Milkshakes -->
-    <div class="item-card show" data-cat="milkshakes">
-      <div class="item-photo"><img src="images/chocolate_milkshake.jpg" alt="Chocolate Milkshake"></div>
-      <div class="item-name">Chocolate Milkshake</div>
-      <div class="item-price">80 egp</div>
-    </div>
-    <div class="item-card show" data-cat="milkshakes">
-      <div class="item-photo"><img src="images/vanilla_milkshake.jpg" alt="Vanilla Milkshake"></div>
-      <div class="item-name">Vanilla Milkshake</div>
-      <div class="item-price">80 egp</div>
-    </div>
-   <div class="item-card show" data-cat="milkshakes">
-      <div class="item-photo"><img src="images/caramel_milkshake.jpg" alt="Caramel Milkshake"></div>
-      <div class="item-name">Caramel Milkshake</div>
-      <div class="item-price">80 egp</div>
-    </div>
-   <div class="item-card show" data-cat="milkshakes">
-      <div class="item-photo"><img src="images/oreo_milkshake.jpg" alt="Oreo Milkshake"></div>
-      <div class="item-name">Oreo Milkshake</div>
-      <div class="item-price">100 egp</div>
-    </div>
-   <div class="item-card show" data-cat="milkshakes">
-      <div class="item-photo"><img src="images/strawberry_milkshake.jpg" alt="Strawberry Milkshake"></div>
-      <div class="item-name">Strawberry Milkshake</div>
-      <div class="item-price">90 egp</div>
-    </div>
+
+
 
     <!-- Desserts -->
     <div class="item-card show" data-cat="desserts">
